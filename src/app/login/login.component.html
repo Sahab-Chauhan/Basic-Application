@@ -1,0 +1,17 @@
+
+<h3>Child Component</h3>
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Password</th>
+        <th>Amount</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of logindata">
+            <td>{{item.loginid}}</td>
+            <td>{{item.pswd | uppercase}}</td>
+            <td>{{item.amount | currency:'INR':"symbol-narrow"}}</td>
+        </tr>
+    </tbody>
+</table> <br>
+<label for="">For Send Message from Login component to the Parent Component :</label> <button type="button" (click)="onbuttonclick()">Send Message</button>

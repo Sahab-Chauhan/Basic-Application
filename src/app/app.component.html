@@ -1,0 +1,10 @@
+<h3>Parent component</h3>
+{{message}}
+<h2>Router Link</h2>
+<a routerLink="about-us">about-us</a> <br><br>
+<a routerLink="basic">basic</a>
+<router-outlet></router-outlet>
+<!-- {{data}} <br>
+<label for="">Child component message send from child = </label>{{message}}
+<app-basic [empdata]="data" (childtoparent)="onbuttonclick($event)"></app-basic> -->
+<app-login [logindata]="logindetail"  (sendmessage)="onbuttonclick($event)"></app-login>
